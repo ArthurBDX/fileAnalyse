@@ -8,11 +8,9 @@ public class Main {
     public static void main(String[] args) {
         Map<Character, Integer> chars = new HashMap<>();
         Scanner scan = new Scanner(System.in);
-        String file;
         try {
             System.out.println("File to analyse :");
-            file = scan.next();
-            File myObj = new File(file);
+            File myObj = new File(scan.next());
             Scanner reader = new Scanner(myObj);
             while (reader.hasNextLine()) {
                 String data = reader.nextLine();
